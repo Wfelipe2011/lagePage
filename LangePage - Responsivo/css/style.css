@@ -1,0 +1,405 @@
+/* Designer Responsivo */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "OpenSans";
+}
+
+@font-face{
+	src:url('../fonte/OpenSans.ttf');
+	font-family: "OpenSans";
+}
+html > body {
+	height: 100%;
+}
+/* Mudança para Designer Responsivo */
+.center{
+	max-width: 1280px;
+	width: 100%/*1200px*/;
+	margin: 0 auto;
+}
+/* <!-- Header(Logo Marca)--> */
+/* Mudança para Designer Responsivo */
+.header {
+	padding: 0 2%;
+	/*min-width: 1200px;*/
+	width: 100%;
+	height: 60px;
+	background-color: #000e6c;
+}
+
+.center img {
+	width: 200px;
+	margin: 15px ;
+	float: right;
+}
+
+/* <!-- Container Banner --> */
+/* Mudança para Designer Responsivo */
+.container-banner {
+	padding: 0 2%;
+	/*min-width: 1200px;*/
+	width: 100%;
+	height: 557px;
+	background-image: url('../imagens/header.png');
+	background-size: cover;/* Para cobrir toda area */
+	background-position: center; 
+}
+/* Mudança para Designer Responsivo */
+.container-banner > .center {
+	max-width: 1280px;
+	/*Adicionado!*/
+	height: 100%;
+}
+/*<!-- Formulario --> */
+.form{
+	padding: 10px;
+	width: 400px;
+	height: calc(100% + 30px);
+	float: left;
+	position: relative;/* Para pode manipular a caixa */
+	top:-15px;
+	border:8px solid #0000CD;
+	background-color: rgba(0, 51, 204,0.4);
+	border-radius: 5px;
+	/*background-clip: padding-box;
+	para deixar a borda com opacidade.
+	*/
+}
+
+.form h2 {
+	font-weight: normal;
+	color: white;
+	font-size: 20px;
+}
+
+.input-box {
+	margin-top: 20px;
+
+}
+
+.input-box span, .form p {
+	display: inline-block;
+	width: 100%;
+	font-size: 17px;
+	color: white;
+	font-weight: bold;
+}
+
+.input-box input[type=text]{
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	border: 1px solid #ccc;
+
+}
+
+.form p{
+	margin: 20px 0;
+}
+
+.form input[type=submit]{
+	width: 280px;
+	height: 56px;
+	background-color: #0000CD;
+	color: white;
+	font-size: 25px;
+	border-radius: 50px;
+	border-bottom: 5px solid #000e6c; /* Efeito 3D na borda */
+	border-right: 5px solid #000e6c;
+	display: inline-block;
+	
+}
+
+.centralizar {
+	text-align: center;
+	padding: 10px;
+}
+
+/*<!-- Lista --> */
+.list {
+	padding: 30px;
+	margin-top: 100px;
+	margin-bottom: 5%;
+	float: right;
+	min-width: 450px;
+	max-width: 559px;
+
+	max-height: 270px;
+	width: 85%;
+	height: 80%;
+	background-color: rgba(0, 51, 204,0.6);
+	border-radius: 8px;
+	/* Efeito opacidade na margem */
+	background-clip: padding-box;
+	/* backgroun-origin tem o mesmo conceito porem serve para imagens */
+	border-width: 12px;
+	border-color: rgba(0, 51, 204,0.3);
+	border-style: solid;
+
+	
+	
+}
+
+.list ul{
+	list-style-position: inside;/* Colocar lista dentro da box */
+}
+
+.list ul li {
+	margin-top: 18px;
+	color: white;
+	font-size: 20px;
+}
+/*<!-- Container Conteudo --> */
+/* Mudança para Designer Responsivo */
+.container-conteudo {
+	padding: 40px 2%;
+	/*Adicionado!*/
+	
+	background-color: #DDDDDD;
+	text-align: center;
+}
+
+.container-conteudo h2{
+	margin-top: 15px;
+	font-weight: : normal;
+}
+
+.container-conteudo p {
+	margin-top: 10px;
+	max-width: 698px;
+	width: 90%;
+	display: inline-block;
+	text-align: justify;
+
+}
+/* <!-- Arrow de trasinçao -->*/
+.arrow {
+	position: relative;
+	left: 50%;
+	margin-left: -20px;
+	width: 45px;
+	height: 45px;
+	background-image: url('../imagens/arrow.png');
+	top: -20px;
+	background-size: 100% 100%;
+	
+}
+/* <!-- Conteudo 2 -->	*/
+.section-2 {
+	padding: 60px 2%;
+	background-color: white;
+
+}
+
+.section-2 h2{
+	margin-top: 10px;
+	text-align: center;
+	color: #462663;
+
+
+}
+/*<!-- Partes --> */
+.container-section2{
+	
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 3%;
+	text-align: center;
+	
+
+}
+
+.conteudo-sigle {
+	padding: 20px;
+	float: left;
+	width: 33.3333%;
+
+	text-align: justify;
+	text-align: center;
+	
+}
+
+.conteudo-sigle img{
+	width: 70px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+}
+/* <!-- Parte 1, 2, 3 -->*/
+.texto-sigle p{
+	
+	text-align: center;
+	width: 100%;
+	padding: 10px 5px;
+	color: #462663;
+	text-align: justify;
+}
+
+/* <!-- Footer -->*/
+
+.clear {
+	clear: both;
+}
+
+.footer {
+	
+	border: 5px solid #000e6c;
+	background-color: #000e6c;
+	text-align: center;
+}
+
+.footer p {
+	padding: 1%;
+	margin-top:1%;
+	margin-bottom: 1%;
+	color: white;
+	font-size: 18px;
+
+}
+
+/* Mudança para Designer Responsivo Usando Midias Query */
+@media screen and (max-width: 1020px){
+	.header {
+		text-align: center;
+		width: 100%;
+		height: auto;
+		
+	}
+		.center img {
+		width: 350px;
+		padding:1px;
+		float: none;
+		display: inline-block;
+		
+	}
+
+	/* <!-- Container Banner --> */
+
+		.container-banner {
+			padding: 40px 2%;
+			/*min-width: 1200px;*/
+			width: 100%;
+			height: auto;
+			text-align: center;
+			
+		}
+
+		.form{
+			max-width: 650px;
+			text-align: center;
+			padding: 10px;
+			width: 100%;
+			height: 100%;
+			
+			float: none;
+			display: inline-block;
+			
+			
+			top:0;
+			
+		}
+
+		.form input[type=submit]{
+			
+			width: 80%;
+		}
+
+		.form h2, {
+			
+			font-size: 30px;
+		}
+
+		.input-box > span,p {
+			font-size: 25px;
+			
+		}
+
+		.input-box input[type=text]{
+			width: 80%;
+		}
+
+		.list {
+
+			padding: 5px;
+			
+			margin-top: 2%;
+			margin-bottom: 5%;
+			float: none;
+			
+			max-width: 650px;
+			display: inline-block;
+			
+			width: 80%;
+			height: auto;
+
+			
+			
+			
+		}
+
+		.list li {
+			font-size: 35px;
+			padding: 2px;
+			margin-top: -5px;
+			margin-bottom: 10px;
+			
+		}
+
+		.arrow {
+			width: 80px;
+			height: 80px;
+			left: 47.5%;
+			margin-top: -20px;
+			
+		}
+
+		.container-conteudo p{
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+		.conteudo-sigle {
+			margin-top: 10px;
+			
+			
+			padding: 30px 2%;
+			float: none;
+			display: inline-block;
+			width: 100%;
+			
+			text-align: justify;
+			text-align: center;
+		}
+
+		.conteudo-sigle img{
+			width: 150px;
+			margin-bottom: 20px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.section-2 h2 {
+			font-size: 35px;
+			margin-top: -5px;
+			
+		}
+
+		.conteudo-sigle p {
+			
+			
+			padding: 20px;
+		}
+
+		.texto-sigle p{
+			font-size: 25px;
+			
+		}
+		.footer p{
+			
+			font-size: 35px;
+		}
+
+}
+
